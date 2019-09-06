@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Costa Rica Weather</title>
+  <title>We're Goin' To Mars Baby</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
 
@@ -17,9 +17,33 @@
       <p><a class="btn btn-primary btn-lg" href="/scrape" role="button">Get Data!</a></p>
     </div>
 
-    <h2>Mars Stuff</h2>
-    <h3>mars image {{ marsData.title }}</h3>
+    <h1>Latest Mars News</h1>
+    <h3>{{ marsData.title }}</h3>
+    <h4>{{ marsData.marsparagraph }}</h4>
+
+    <h2>Rotating Featured Mars Image</h2>
+    <img src = {{ marsData.image }}> 
  
+    <h1>Current Weather on Mars</h1>
+    <h3> {{ marsData.weather }}</h3>
+
+    <h1>Mars Facts</h1>
+    <h3> {{marsData.facts}} </h3>
+
+    <h1>Hempisphere Pictures</h1>
+    <h3>Cerb</h3>
+    <img src = {{ marsData.cerb }}>
+
+    <h3>Schiap</h3>
+    <img src = {{ marsData.schiap }}>
+
+    <h3>Syrtis</h3>
+    <img src = {{ marsData.syrtis }}>
+
+    <h3>Valles</h3>
+    <img src = {{ marsData.valles }}>
+
+    
   </div>
   </div>
 </body>
